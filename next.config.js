@@ -6,8 +6,8 @@ const nextConfig = {
     loader: "akamai",
     path: "",
   },
-  basePath: "/mirkoalba.github.io",
-  assetPrefix: "/mirkoalba.github.io",
+  basePath: "/",
+  assetPrefix: "/",
 };
 
 module.exports = nextConfig;
