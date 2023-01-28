@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "mirkoalba.github.io",
   "version": "1.0.0",
   "description": "Mirko Albanese's portoflio",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MirkoAlba/portfolio.git"
+    "url": "git+https://github.com/MirkoAlba/mirkoalba.github.io.git"
   },
   "keywords": [],
   "author": "Mirko Albanese",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MirkoAlba/portfolio/issues"
+    "url": "https://github.com/MirkoAlba/mirkoalba.github.io/issues"
   },
-  "homepage": "https://github.com/MirkoAlba/portfolio#readme",
+  "homepage": "https://github.com/MirkoAlba/mirkoalba.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.27.11",
     "browser-sync-webpack-plugin": "^2.3.0",
