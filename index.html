@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ciao! io sono Mirko</title>
+
+    <meta
+      name="description"
+      content="Mi chiamo Mirko Albanese e sono uno Web Developer."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ciao! io sono Mirko" />
+    <meta
+      property="og:description"
+      content="Mi chiamo Mirko Albanese e sono uno Web Developer."
+    />
+    <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+    <meta property="og:url" content="PERMALINK" />
+    <meta property="og:site_name" content="Mirko Albanese" />
+
+    <meta name="twitter:title" content="Ciao! io sono Mirko" />
+    <meta
+      name="twitter:description"
+      content="Mi chiamo Mirko Albanese e sono uno Sviluppatore Web."
+    />
+    <meta name="twitter:image" content="LINK TO IMAGE" />
+    <meta name="twitter:site" content="@Mirkozzo_" />
+    <meta name="twitter:creator" content="@Mirkozzo_" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon/android-chrome-512x512.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/dist/css/main.css" />
+
+    <script>
+      // avoid flickering dark mode when reload page
+      let theme = localStorage.getItem("theme") || "light";
+      document.documentElement.setAttribute("data-bs-theme", theme);
+    </script>
+  </head>
+
+  <body>
+    <noscript>
+      <div
+        class="enable-js w-100 h-100 d-flex align-items-center justify-content-center"
+      >
+        <p class="text-warning h2 mb-0 fw-bold text-uppercase">
+          Abilita JavaScript!
+        </p>
+      </div>
+    </noscript>
+
+    <div class="content">
+      <section
+        class="section--hero d-flex align-items-center position-relative"
+      >
+        <nav class="hero-nav py-3 py-lg-5">
+          <div class="container d-flex justify-content-end">
+            <!-- <a
+              href="#"
+              data-aos="slide-down"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              class="btn p-0 me-3"
+            >
+              <svg width="30" height="30">
+                <use href="#eng-icon"></use>
+              </svg>
+            </a> -->
+            <button
+              class="btn btn-dark-mode-toggler p-0 border-0"
+              data-aos="slide-down"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <svg
+                width="30"
+                height="30"
+                class="sun-icon"
+                data-bs-theme-value="light"
+              >
+                <use href="#sun-icon"></use>
+              </svg>
+              <svg
+                width="30"
+                height="30"
+                class="moon-icon"
+                data-bs-theme-value="dark"
+              >
+                <use href="#moon-icon"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-lg-6 col-xl-7">
+              <h1 class="fw-bolder display-1 mb-4">
+                <span
+                  data-aos="slide-down"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  class="d-block"
+                >
+                  Ciao!
+                </span>
+                <span
+                  data-aos="slide-down"
+                  data-aos-delay="150"
+                  data-aos-duration="1000"
+                  class="d-block"
+                  >io sono Mirko
+                </span>
+              </h1>
+              <p
+                data-aos="slide-up"
+                data-aos-delay="150"
+                data-aos-duration="1000"
+              >
+                Sono uno sviluppatore web (principalmente
+                <strong>front-end</strong> ma aspirante
+                <strong>full stack</strong>), skillato in diversi linguaggi di
+                programmazione e metodologie.
+              </p>
+              <p
+                data-aos="slide-up"
+                data-aos-delay="150"
+                data-aos-duration="1000"
+              >
+                Nel mio tempo libero mi piace giocare ai videogiochi, questa
+                passione mi ha permesso anche di sviluppare le mie
+                <strong>skills</strong> nel
+                <strong>game development</strong> (puoi scaricare il mio gioco
+                per smartphone android
+                <a href="/assets/game/SpaceSurvivor.apk">qui</a>).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--form py-75 py-lg-100">
+        <div class="container">
+          <h2
+            data-aos="slide-down"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            class="fw-bolder display-3 mb-4"
+          >
+            Contattami
+          </h2>
+          <p
+            data-aos="slide-down"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            class="mb-5"
+          >
+            Non aver paura, chiedimi qualsiasi cosa.
+          </p>
+
+          <form
+            id="form"
+            action=""
+            class="form row align-items-center justify-content-lg-between"
+            data-step="0"
+          >
+            <div class="col-12">
+              <div
+                class="progress position-relative"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="33"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-md-3 col-lg-4 d-flex justify-content-md-end order-1 order-md-0 mt-3 mt-md-0"
+            >
+              <button
+                type="button"
+                data-btn="prev"
+                class="btn btn-arrow border-1 border-white p-1"
+              >
+                <svg width="30" height="30">
+                  <use href="#arrow-icon"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 overflow-hidden order-0 order-md-1 pt-5 pb-3 py-md-5"
+            >
+              <div class="row flex-nowrap row-translate">
+                <div class="col-12 position-relative">
+                  <input
+                    id="name"
+                    type="text"
+                    class="form-control"
+                    placeholder="Nome"
+                    name="name"
+                    required
+                  />
+                  <div class="error mt-2 text-danger">Scrivi il tuo nome.</div>
+                </div>
+                <div class="col-12 position-relative">
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="E-mail"
+                    name="email"
+                    required
+                  />
+                  <div class="error mt-2 text-danger">
+                    L'e-mail deve essere valida.
+                  </div>
+                </div>
+                <div class="col-12 position-relative">
+                  <textarea
+                    id="message"
+                    class="form-control"
+                    placeholder="Messaggio"
+                    name="message"
+                    rows="1"
+                    required
+                  ></textarea>
+                  <div class="error mt-2 text-danger">
+                    Scrivi il tuo messaggio.
+                  </div>
+                </div>
+                <div class="col-12 position-relative text-center">
+                  <button type="button" class="btn btn-secondary btn-submit">
+                    Invia
+                  </button>
+                  <span
+                    class="spinner-border spinner-border-sm d-none loading"
+                    role="status"
+                    aria-hidden="true"
+                  ></span>
+                  <div class="success-message text-center"></div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-md-3 col-lg-4 d-flex justify-content-end justify-content-md-start order-2 mt-3 mt-md-0"
+            >
+              <button
+                type="button"
+                data-btn="next"
+                class="btn btn-arrow btn-arrow--reverse border-1 border-white p-1"
+              >
+                <svg width="30" height="30">
+                  <use href="#arrow-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section--footer">
+        <div class="footer container">
+          <div class="row justify-content-between">
+            <div class="col-12">
+              <div
+                class="py-4 py-lg-5 border-top border-2 d-flex justify-content-between"
+              >
+                <div>
+                  <a
+                    href="https://www.linkedin.com/in/mirko-albanese-92b610231/"
+                    target="_blank"
+                    class="d-inline-block me-3"
+                  >
+                    <svg>
+                      <use href="#linkedin-icon"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://github.com/MirkoAlba"
+                    target="_blank"
+                    class="d-inline-block"
+                  >
+                    <svg>
+                      <use href="#github-icon"></use>
+                    </svg>
+                  </a>
+                </div>
+
+                <div>
+                  <small class="d-flex align-items-center">
+                    <svg width="16" height="16">
+                      <use href="#globe-icon"></use>
+                    </svg>
+                    <span class="ms-1">
+                      Italia ©
+                      <script>
+                        document.write(new Date().getFullYear());
+                      </script>
+                    </span>
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="visually-hidden pe-none" style="display: none">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <symbol id="github-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            />
+          </symbol>
+
+          <symbol id="linkedin-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+            />
+          </symbol>
+
+          <symbol id="globe-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"
+            />
+          </symbol>
+
+          <symbol id="moon-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+            />
+          </symbol>
+
+          <symbol id="sun-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+            />
+          </symbol>
+
+          <symbol id="eng-icon" viewBox="0 0 640 480">
+            <path fill="#012169" d="M0 0h640v480H0z" />
+            <path
+              fill="#FFF"
+              d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z"
+            />
+            <path
+              fill="#C8102E"
+              d="m424 281 216 159v40L369 281h55zm-184 20 6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z"
+            />
+            <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z" />
+            <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z" />
+          </symbol>
+
+          <symbol id="check-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+            />
+          </symbol>
+
+          <symbol id="arrow-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+            />
+          </symbol>
+        </svg>
+      </div>
+    </div>
+
+    <script src="/dist/js/main.js"></script>
+  </body>
+</html>

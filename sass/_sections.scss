@@ -1,0 +1,180 @@
+$bg-secondary-gradient: linear-gradient(
+  90deg,
+  #6f42c1 75%,
+  rgba(111, 66, 193, 0)
+);
+
+.section {
+  &--hero {
+    height: calc(var(--mrk-vh, 1vh) * 100);
+  }
+
+  &--form {
+    form {
+      .progress {
+        background-color: rgba($secondary, 0.25);
+
+        &-bar {
+          background: $bg-secondary-gradient;
+          // transition: width 1s;
+          // transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        }
+      }
+
+      .row-translate {
+        transition: $transition-base;
+        transform: translateX(0);
+      }
+
+      .error {
+        position: absolute;
+        bottom: -20px;
+        left: 15px;
+        opacity: 0;
+        visibility: hidden;
+        transition: $transition-base;
+
+        &.visible {
+          opacity: 1;
+        }
+      }
+
+      .success-message {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.6s ease-in-out;
+
+        &.visible {
+          opacity: 1;
+        }
+      }
+
+      // Multistep
+
+      // email
+      &[data-step="1"] {
+        .btn {
+          &[data-btn="prev"] {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        .row-translate {
+          transform: translateX(-100%);
+        }
+
+        .progress-bar {
+          width: 33.333333% !important;
+        }
+      }
+
+      // message
+      &[data-step="2"] {
+        .row-translate {
+          transform: translateX(-200%);
+        }
+
+        .progress-bar {
+          width: 66.666666% !important;
+        }
+
+        .btn {
+          &[data-btn="prev"] {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+
+      // thank you
+      &[data-step="3"] {
+        .row-translate {
+          transform: translateX(-300%);
+        }
+
+        .progress-bar {
+          width: 100% !important;
+          background: $secondary;
+          border-top-right-radius: $progress-border-radius;
+          border-bottom-right-radius: $progress-border-radius;
+        }
+
+        .btn {
+          &[data-btn="next"] {
+            opacity: 0;
+            visibility: hidden;
+          }
+
+          &[data-btn="prev"] {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+
+      textarea {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding-left: 0;
+
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        [data-bs-theme="light"] & {
+          -webkit-text-fill-color: $dark !important;
+        }
+
+        [data-bs-theme="dark"] & {
+          -webkit-text-fill-color: $gray-500 !important;
+        }
+      }
+
+      input {
+        &[type="text"],
+        &[type="email"] {
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          padding-left: 0;
+          font-family: $font-family-base !important;
+
+          -webkit-background-clip: text;
+          background-clip: text;
+
+          [data-bs-theme="light"] & {
+            -webkit-text-fill-color: $dark !important;
+          }
+
+          [data-bs-theme="dark"] & {
+            -webkit-text-fill-color: $gray-500 !important;
+          }
+        }
+      }
+    }
+  }
+
+  &--footer {
+    a {
+      color: $dark;
+
+      &:hover {
+        svg {
+          color: $secondary !important;
+        }
+      }
+
+      [data-bs-theme="dark"] & {
+        color: $white;
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+        color: $dark;
+        transition: color 0.3s ease-in-out;
+      }
+    }
+  }
+}

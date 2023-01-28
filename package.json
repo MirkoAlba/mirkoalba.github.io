@@ -1,0 +1,39 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Mirko Albanese's portoflio",
+  "main": "index.js",
+  "scripts": {
+    "prod": "npx mix --production",
+    "watch": "npx mix watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MirkoAlba/portfolio.git"
+  },
+  "keywords": [],
+  "author": "Mirko Albanese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MirkoAlba/portfolio/issues"
+  },
+  "homepage": "https://github.com/MirkoAlba/portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.49",
+    "nodemon": "^2.0.20",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.57.1",
+    "sass-loader": "^12.6.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.0-alpha1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.0"
+  }
+}

@@ -1,0 +1,36 @@
+h1,
+.h1 {
+  @include media-breakpoint-up(lg) {
+    font-size: rem(48px);
+  }
+}
+
+h2,
+.h2 {
+  @include media-breakpoint-up(lg) {
+    font-size: rem(36px);
+  }
+}
+
+h3,
+.h3 {
+  @include media-breakpoint-up(lg) {
+    font-size: rem(28px);
+  }
+}
+
+h4,
+.h4 {
+  @include media-breakpoint-up(lg) {
+    font-size: rem(22px);
+  }
+}
+
+p,
+.p,
+label {
+  font-size: rem(16px);
+  @include media-breakpoint-up(md) {
+    font-size: rem(18px);
+  }
+}

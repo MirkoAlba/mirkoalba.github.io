@@ -1,0 +1,16 @@
+@import "@/bootstrap/scss/functions";
+
+// custom
+@import "custom-functions";
+@import "custom-variables";
+@import "custom-variables-dark";
+
+// bs
+@import "@/bootstrap/scss/bootstrap";
+// aos
+@import "@/aos/dist/aos.css";
+
+// theme elements
+@import "typo";
+@import "sections";
+@import "root";
