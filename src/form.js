@@ -10,6 +10,10 @@ const btnSubmit = document.querySelector(".btn-submit"),
   messageField = document.querySelector("textarea"),
   form = document.querySelector("form");
 
+const isDev =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1";
+
 btnSubmit.addEventListener("click", () => {
   loadingSpinner.classList.remove("d-none");
   btnSubmit.classList.add("d-none");
@@ -23,13 +27,18 @@ btnSubmit.addEventListener("click", () => {
       .execute("6LdmnDMkAAAAAG4dAz32VMYBav7jVwyrPwz-0sA1", { action: "submit" })
       .then(function (token) {
         // Add your logic to submit to your backend server here.
-        fetch("http://localhost:3001/contact", {
-          method: "post",
-          body: JSON.stringify(data),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        })
+        fetch(
+          isDev
+            ? "http://localhost:3001/contact"
+            : "https://gmail-api.onrender.com/contact",
+          {
+            method: "post",
+            body: JSON.stringify(data),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             // {code, message}
