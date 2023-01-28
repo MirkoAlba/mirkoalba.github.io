@@ -37,6 +37,12 @@
       href="/assets/favicon/android-chrome-512x512.png"
     />
 
+    <script>
+      // avoid flickering dark mode when reload page
+      let theme = localStorage.getItem("theme") || "light";
+      document.documentElement.setAttribute("data-bs-theme", theme);
+    </script>
+
     <!-- Cookiebot -->
     <script
       id="Cookiebot"
@@ -54,12 +60,6 @@
     />
 
     <link rel="stylesheet" href="/dist/css/main.css" />
-
-    <script>
-      // avoid flickering dark mode when reload page
-      let theme = localStorage.getItem("theme") || "light";
-      document.documentElement.setAttribute("data-bs-theme", theme);
-    </script>
   </head>
 
   <body>
