@@ -18,35 +18,42 @@ btnSubmit.addEventListener("click", () => {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData);
 
-  fetch("http://localhost:3001/contact", {
-    method: "post",
-    body: JSON.stringify(data),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      // {code, message}
-      successMessage.innerHTML = data.message;
-      successMessage.classList.add("visible");
-      loadingSpinner.classList.add("d-none");
+  grecaptcha.ready(function () {
+    grecaptcha
+      .execute("6LdmnDMkAAAAAG4dAz32VMYBav7jVwyrPwz-0sA1", { action: "submit" })
+      .then(function (token) {
+        // Add your logic to submit to your backend server here.
+        fetch("http://localhost:3001/contact", {
+          method: "post",
+          body: JSON.stringify(data),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            // {code, message}
+            successMessage.innerHTML = data.message;
+            successMessage.classList.add("visible");
+            loadingSpinner.classList.add("d-none");
 
-      if (data.code == 400 || data.code == 500) {
-        btnSubmit.classList.remove("d-none");
-        successMessage.classList.add("text-danger", "mt-2");
-      } else {
-        btnPrev.classList.add("d-none");
-      }
-    })
-    .catch(() => {
-      successMessage.innerHTML =
-        "Errore! API non disponibile, riprova più tardi.";
-      successMessage.classList.add("visible");
-      loadingSpinner.classList.add("d-none");
-      successMessage.classList.add("text-danger");
-      btnPrev.classList.add("d-none");
-    });
+            if (data.code == 400 || data.code == 500) {
+              btnSubmit.classList.remove("d-none");
+              successMessage.classList.add("text-danger", "mt-2");
+            } else {
+              btnPrev.classList.add("d-none");
+            }
+          })
+          .catch(() => {
+            successMessage.innerHTML =
+              "Errore! API non disponibile, riprova più tardi.";
+            successMessage.classList.add("visible");
+            loadingSpinner.classList.add("d-none");
+            successMessage.classList.add("text-danger");
+            btnPrev.classList.add("d-none");
+          });
+      });
+  });
 });
 
 /**
