@@ -174,3 +174,47 @@ button {
   visibility: hidden;
   opacity: 0;
 }
+
+// Cookiebot
+.CybotCookiebotDialogBodyButton {
+  background-color: $secondary !important;
+  border-color: $secondary !important;
+}
+
+.CybotCookiebotDialogBodyButton {
+  border-color: $secondary !important;
+}
+
+.CybotCookiebotDialogBodyEdgeMoreDetailsLink {
+  color: $secondary !important;
+}
+
+.CybotCookiebotDialogBodyLevelButtonSlider {
+  background-color: $secondary !important;
+}
+
+#CybotCookiebotDialogHeader {
+  display: none !important;
+}
+
+.Cookiebotwidget-consent-icon svg {
+  color: $secondary !important;
+  fill: $secondary !important;
+}
+
+.CookiebotWidget-show-consent-details {
+  color: $secondary !important;
+}
+
+#CookiebotWidget-btn-change {
+  background-color: $secondary !important;
+}
+
+.CybotCookiebotDialogNavItemLink .CybotCookiebotDialogActive {
+  color: $secondary !important;
+  border-color: $secondary !important;
+}
+
+.CybotCookiebotDialogNavItemLink:hover {
+  color: $secondary !important;
+}
