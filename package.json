@@ -2,7 +2,7 @@
   "name": "mirkoalba.github.io",
   "version": "1.0.0",
   "description": "Mirko Albanese's portoflio",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "prod": "npx mix --production",
     "watch": "npx mix watch",

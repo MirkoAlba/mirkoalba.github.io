@@ -3345,6 +3345,7 @@ btnSubmit.addEventListener("click", function () {
         successMessage.innerHTML = data.message;
         successMessage.classList.add("visible");
         loadingSpinner.classList.add("d-none");
+        console.log(data);
         if (data.code == 400 || data.code == 500) {
           btnSubmit.classList.remove("d-none");
           successMessage.classList.add("text-danger", "mt-2");
