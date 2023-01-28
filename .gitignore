@@ -1,6 +1,6 @@
 node_modules
 *.mp4
-*.apk
-*.png
+# *.apk
+# *.png
 *.jpg
 .env
