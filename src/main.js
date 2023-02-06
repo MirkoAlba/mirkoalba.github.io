@@ -1,7 +1,7 @@
-import "bootstrap";
+// import "bootstrap";
 
 import "./dark-mode";
-import "./form";
+// import "./form";
 
 import AOS from "aos";
 

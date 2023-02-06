@@ -43,15 +43,6 @@
       document.documentElement.setAttribute("data-bs-theme", theme);
     </script>
 
-    <!-- Cookiebot -->
-    <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="08d70e9b-8ce8-48b9-b9c3-708230f1d606"
-      data-blockingmode="auto"
-      type="text/javascript"
-    ></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -163,136 +154,12 @@
         </div>
       </section>
 
-      <section class="section--form py-75 py-lg-100">
-        <div class="container">
-          <h2
-            data-aos="slide-down"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            class="fw-bolder display-3 mb-4"
-          >
-            Contattami
-          </h2>
-          <p
-            data-aos="slide-down"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            class="mb-5"
-          >
-            Non aver paura, chiedimi qualsiasi cosa.
-          </p>
-
-          <form
-            id="form"
-            action=""
-            class="form row align-items-center justify-content-lg-between"
-            data-step="0"
-          >
-            <div class="col-12">
-              <div
-                class="progress position-relative"
-                role="progressbar"
-                aria-label="Basic example"
-                aria-valuenow="33"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div class="progress-bar" style="width: 0%"></div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-3 col-lg-4 d-flex justify-content-md-end order-1 order-md-0 mt-3 mt-md-0"
-            >
-              <button
-                type="button"
-                data-btn="prev"
-                class="btn btn-arrow border-1 border-white p-1"
-              >
-                <svg width="30" height="30">
-                  <use href="#arrow-icon"></use>
-                </svg>
-              </button>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-4 overflow-hidden order-0 order-md-1 pt-5 pb-3 py-md-5"
-            >
-              <div class="row flex-nowrap row-translate">
-                <div class="col-12 position-relative">
-                  <input
-                    id="name"
-                    type="text"
-                    class="form-control"
-                    placeholder="Nome"
-                    name="name"
-                    required
-                  />
-                  <div class="error mt-2 text-danger">Scrivi il tuo nome.</div>
-                </div>
-                <div class="col-12 position-relative">
-                  <input
-                    id="email"
-                    type="email"
-                    class="form-control"
-                    placeholder="E-mail"
-                    name="email"
-                    required
-                  />
-                  <div class="error mt-2 text-danger">
-                    L'e-mail deve essere valida.
-                  </div>
-                </div>
-                <div class="col-12 position-relative">
-                  <textarea
-                    id="message"
-                    class="form-control"
-                    placeholder="Messaggio"
-                    name="message"
-                    rows="1"
-                    required
-                  ></textarea>
-                  <div class="error mt-2 text-danger">
-                    Scrivi il tuo messaggio.
-                  </div>
-                </div>
-                <div class="col-12 position-relative text-center">
-                  <button type="button" class="btn btn-secondary btn-submit">
-                    Invia
-                  </button>
-                  <span
-                    class="spinner-border spinner-border-sm d-none loading"
-                    role="status"
-                    aria-hidden="true"
-                  ></span>
-                  <div class="success-message text-center"></div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-3 col-lg-4 d-flex justify-content-end justify-content-md-start order-2 mt-3 mt-md-0"
-            >
-              <button
-                type="button"
-                data-btn="next"
-                class="btn btn-arrow btn-arrow--reverse border-1 border-white p-1"
-              >
-                <svg width="30" height="30">
-                  <use href="#arrow-icon"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-
       <section class="section--footer">
         <div class="footer container">
           <div class="row justify-content-between">
             <div class="col-12">
               <div
-                class="pt-4 pt-lg-5 border-top border-2 d-flex justify-content-between"
+                class="py-4 py-lg-5 border-top border-2 d-flex justify-content-between"
               >
                 <div>
                   <a
@@ -307,10 +174,19 @@
                   <a
                     href="https://github.com/MirkoAlba"
                     target="_blank"
-                    class="d-inline-block"
+                    class="d-inline-block me-3"
                   >
                     <svg>
                       <use href="#github-icon"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="mailto:mirkoalba006@gmail.com"
+                    target="_blank"
+                    class="d-inline-block"
+                  >
+                    <svg>
+                      <use href="#mail-icon"></use>
                     </svg>
                   </a>
                 </div>
@@ -328,44 +204,6 @@
                     </span>
                   </small>
                 </div>
-              </div>
-
-              <div class="pb-4 pb-lg-5 pt-3 text-center">
-                <small style="font-size: 11px">
-                  Questo sito è protetto da reCAPTCHA e si applicano la
-                  <a
-                    class="text-decoration-none"
-                    href="https://policies.google.com/privacy"
-                  >
-                    Privacy Policy
-                  </a>
-                  e i
-                  <a
-                    class="text-decoration-none"
-                    href="https://policies.google.com/terms"
-                  >
-                    Termini di servizio
-                  </a>
-                  Google.
-                </small>
-                <br />
-                <small style="font-size: 11px">
-                  <a
-                    class="text-decoration-none"
-                    href="https://www.termsfeed.com/live/a4d8a2f1-148e-4c63-896d-ed48ed382941"
-                    target="_blank"
-                  >
-                    Privacy policy
-                  </a>
-                  -
-                  <a
-                    class="text-decoration-none"
-                    href="https://www.termsfeed.com/live/80699402-823b-44c5-9e0c-507456bc3b81"
-                    target="_blank"
-                  >
-                    Cookie policy
-                  </a>
-                </small>
               </div>
             </div>
           </div>
@@ -430,12 +268,16 @@
               d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
             />
           </symbol>
+
+          <symbol id="mail-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+            />
+          </symbol>
         </svg>
       </div>
     </div>
 
-    <!-- Recaptcha v3 -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdmnDMkAAAAAG4dAz32VMYBav7jVwyrPwz-0sA1"></script>
     <script src="/dist/js/main.js"></script>
   </body>
 </html>
