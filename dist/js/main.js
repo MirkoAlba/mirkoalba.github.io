@@ -119,6 +119,12 @@ window.addEventListener("resize", function () {
   vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--mrk-vh", "".concat(vh, "px"));
 });
+var clickCounter = 0;
+document.addEventListener("click", function (event) {
+  if (event.target.classList.contains("ee") && ++clickCounter === 5) {
+    window.location.href = "https://mirkoalba.github.io/assets/video/ee.mp4";
+  }
+});
 
 /***/ }),
 
